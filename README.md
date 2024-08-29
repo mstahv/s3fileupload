@@ -1,11 +1,11 @@
-# Project Base for Vaadin Flow and Spring Boot
+# AWS S3 File Upload with Vaadin Flow
 
-This project can be used as a starting point to create your own Vaadin Flow application with Spring Boot.
-It contains all the necessary configuration and some placeholder files to get you started.
+Example project how to upload files and store them in AWS S3 using Vaadin Flow.
 
-Import the project to the IDE of your choosing as a Maven project. 
+To run this example you'll need your own AWS account and S3 bucket. You can create a new bucket from the AWS Management Console, and then create a new IAM user with programmatic access and configure it
+for this app. See S3StorageService class for more.
 
-Run application using `mvn spring-boot:run` or directly running Application class from your IDE.
+Run application using `mvn spring-boot:run` or directly running DevModeApplication class from your IDE.
 
 Open http://localhost:8080/ in browser
 
