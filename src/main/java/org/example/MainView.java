@@ -24,7 +24,11 @@ public class MainView extends VerticalLayout {
                 myFileGrid.updateItems();
                 Notification.show("File uploaded: " + metaData.fileName());
             };
-        });
+        })
+        // suggest camera and hide DD area by uncommenting the following lines
+        // .withAcceptedFileTypes("image/*;capture=camera")
+        // .withDragAndDrop(false)
+        ;
 
         add(uploadFileHandler);
         add(myFileGrid);
