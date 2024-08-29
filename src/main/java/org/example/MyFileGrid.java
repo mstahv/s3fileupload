@@ -1,10 +1,12 @@
 package org.example;
 
 import com.vaadin.flow.spring.annotation.SpringComponent;
+import org.springframework.context.annotation.Scope;
 import org.vaadin.firitin.components.DynamicFileDownloader;
 import org.vaadin.firitin.components.grid.VGrid;
 
 @SpringComponent
+@Scope("prototype")
 public class MyFileGrid extends VGrid<MyFile> {
     private final S3StorageService s3StorageService;
 
