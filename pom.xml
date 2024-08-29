@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.example</groupId>
+    <artifactId>s3fileupload</artifactId>
+    <name>Project base for Vaadin Flow and Spring Boot</name>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <!-- Defaults come from parent, but shown here how to override -->
+        <vaadin.version>24.4.10</vaadin.version>
+        <spring-boot.version>3.3.3</spring-boot.version>
+    </properties>
+
+    <parent>
+        <groupId>in.virit.sb</groupId>
+        <!-- Use project-parent if you don't want to have Viritin dependency -->
+        <artifactId>viritin-project-parent</artifactId>
+        <version>0.0.5</version>
+        <relativePath/>
+    </parent>
+
+    <dependencies>
+        
+        <!-- Essential Vaadin & Spring Dependencies coming from parent -->
+
+        <!-- Official AWS SDK -->
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-s3</artifactId>
+            <version>1.12.761</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+        <!-- Essential Vaadin & Spring plugins coming from parent -->
+        </plugins>
+    </build>
+
+</project>
